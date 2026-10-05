@@ -1,0 +1,157 @@
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+	--default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--heading-font: "Ubuntu", sans-serif;
+	--nav-font: "Nunito", sans-serif;
+}
+
+
+:root {
+	--background-color: #1f1f1f; /* Background color for the entire website, including individual sections */
+	--default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+	--heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+	--accent-color: #ececec; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+	--surface-color: #232323; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+	--contrast-color: #310606; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+html {
+	direction: rtl;
+}
+body {
+	color: var(--default-color);
+	background-color: var(--background-color);
+	font-family: var(--default-font);
+}
+
+
+/*--------------------------------------------------------------
+# Contact Section
+--------------------------------------------------------------*/
+.contact .info-box {
+	background-color: var(--accent-color);
+	color: var(--contrast-color);
+	padding: 3rem;
+	border-radius: 1rem;
+	height: 100%;
+}
+
+	.contact .info-box h3 {
+		color: var(--contrast-color);
+		font-size: 2rem;
+		margin-bottom: 1rem;
+	}
+
+@media (max-width: 767.98px) {
+	.contact .info-box h3 {
+		font-size: 1.75rem;
+	}
+}
+
+.contact .info-box p {
+	opacity: 0.8;
+	margin-bottom: 2rem;
+}
+
+.contact .info-box a {
+/*	color: var(--contrast-color);*/
+}
+
+@media (max-width: 992px) {
+	.contact .info-box {
+		padding: 1.5rem;
+	}
+}
+
+
+
+
+.contact .info-item {
+	display: flex;
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+	.contact .info-item:last-child {
+		margin-bottom: 0;
+	}
+
+	.contact .info-item .icon-box {
+		width: 3.5rem;
+		height: 3.5rem;
+		background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		transition: 0.3s;
+	}
+
+		.contact .info-item .icon-box i {
+			font-size: 1.5rem;
+			color: var(--contrast-color);
+		}
+
+	.contact .info-item:hover .icon-box {
+		background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+	}
+
+	.contact .info-item .content h4 {
+		color: var(--contrast-color);
+		font-size: 1.25rem;
+		margin-bottom: 0.5rem;
+		font-weight: 700;
+	}
+
+	.contact .info-item .content p {
+		margin-bottom: 0.25rem;
+		font-size: 0.95rem;
+	}
+
+		.contact .info-item .content p:last-child {
+			margin-bottom: 0;
+		}
+
+
+
+
+
+
+
+	.contact .info-item .icon-box {
+		width: 3.5rem;
+		height: 3.5rem;
+		background-color: color-mix(in srgb, var(--contrast-color), transparent 85%);
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-shrink: 0;
+		transition: 0.3s;
+	}
+
+		.contact .info-item .icon-box i {
+			font-size: 1.5rem;
+			color: var(--contrast-color);
+		}
+
+	.contact .info-item:hover .icon-box {
+		background-color: color-mix(in srgb, var(--contrast-color), transparent 70%);
+	}
+
+
+.icon-box img {
+	width: 24px;
+	height: 24px;
+}
+
+
+#logo {
+	width: 150px;
+	height: 150px;
+}
